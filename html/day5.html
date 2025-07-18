@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <h1>Forms in HTML</h1>
+    </center>
+
+    <fieldset>
+      <legend>Fill This Form</legend>
+
+      <form>
+        <label for="username">Username :</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter username"
+        />
+
+        <br /><br />
+
+        <label for="email">Email :</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="demo@example.com"
+        />
+
+        <br /><br />
+
+        <label for="password">Password :</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Abc!@#"
+        />
+
+        <br /><br />
+
+        <label for="gender">Gender :</label>
+        <br />
+
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male" />
+
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female" />
+
+        <br /><br />
+
+        <label for="hobbies">Hobbies :</label>
+
+        <label for="coding">Coding</label>
+        <input type="checkbox" name="hobbies" id="coding" value="coding" />
+
+        <label for="cricket">Cricket</label>
+        <input type="checkbox" name="hobbies" id="cricket" value="cricket" />
+
+        <br /><br />
+
+        <label for="country">Country :</label>
+
+        <select name="country" id="country">
+          <option value="" disabled selected>select-country</option>
+          <option value="india">India</option>
+          <option value="china">China</option>
+        </select>
+
+        <br /><br />
+
+        <label for="phoneno">Phone No:</label>
+        <input
+          type="tel"
+          maxlength="10"
+          minlength="10"
+          name="phoneno"
+          id="phoneno"
+        />
+
+        <br /><br />
+
+        <label for="resume">Resume :</label>
+        <input type="file" name="resume" id="resume" />
+
+        <br /><br />
+
+        <label for="favcolor">Fav Color :</label>
+        <input type="color" name="favcolor" id="favcolor" />
+
+        <br /><br />
+
+        <input type="date" name="" id="" />
+
+        <br /><br />
+
+        <input type="datetime-local" name="" id="" />
+
+        <br /><br />
+
+        <input type="week" name="" id="" />
+
+        <br /><br />
+        <button type="submit">Submit</button>
+      </form>
+    </fieldset>
+
+    <br /><br /><br />
+
+    <center>
+      <h1>Form Using Table</h1>
+    </center>
+
+    <form>
+      
+      <table>
+        
+        <tr>
+          <td>
+            <label for="">Username :</label>
+          </td>
+          <td>
+            <input type="text" name="" id="" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="">Email :</label>
+          </td>
+
+          <td>
+            <input type="text" name="" id="" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
