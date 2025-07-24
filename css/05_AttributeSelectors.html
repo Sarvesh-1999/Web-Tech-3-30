@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        div[name]{
+            background-color: yellow;
+        }
+
+        div[name="box2"]{
+            background-color: red;
+        }
+
+        div[name |= "box3"]{
+            background-color: lightblue;
+        }
+
+        div[name ~= "container"]{
+            background-color: aqua;
+        }
+
+        /* ends with */
+        div[name $= "x12"]{
+            background-color: blueviolet;
+        }
+
+        /* starts with */
+        div[name ^= "con"]{
+            background-color: chartreuse;
+        }
+
+        /* in between */
+        div[name *= "ast"]{
+            background-color: brown;
+        }
+
+    </style>
+
+
+
+
+
+</head>
+<body>
+    <h1>Learn Attribute Selectors</h1>
+
+    <div name="box1">div 1</div>
+
+    <div name="box2">div 2</div>
+
+    <div name="box3-wrapper">div 3</div>
+
+    <div name="box4 container">div 4</div>
+
+    <div name="divbox12">div 5</div>
+
+    <div name="content">div 6</div>
+
+    <div name="lastcontainer">div 7</div>
+</body>
+</html>

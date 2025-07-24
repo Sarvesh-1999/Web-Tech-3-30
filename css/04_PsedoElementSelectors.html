@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      p::first-letter {
+        color: red;
+        font-size: 70px;
+      }
+
+      p::first-line {
+        color: blueviolet;
+      }
+
+      p::selection {
+        background-color: yellow;
+        color: black;
+      }
+
+      h3::before {
+        content: "Java";
+        color: blue;
+      }
+
+      h3::after {
+        content: "😻";
+        font-size: 70px;
+      }
+
+      ::marker {
+        color: crimson;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learn Pseudo Element Selectors</h1>
+    <!-- 
+    1) ::first-letter
+    2) ::first-line
+    3) ::before
+    4) ::after
+    5) ::selection
+    6) ::marker
+    -->
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+      dolores temporibus id autem repudiandae distinctio quos sunt aliquam est
+      vero deserunt natus exercitationem nam soluta quo tempore perferendis
+      ullam error odit ratione! Quae ducimus dolores magni, fuga, delectus quis,
+      totam quisquam provident neque asperiores consequatur ad aspernatur vel.
+      Rerum, quis!
+    </p>
+
+    <h3>script</h3>
+
+    <ul>
+      <li>JAVAFULLSTACK</li>
+      <li>MERNSTACK</li>
+      <li>PYTHONFULLSTACK</li>
+    </ul>
+  </body>
+</html>

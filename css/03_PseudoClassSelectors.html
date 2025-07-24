@@ -1,38 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        #btn1{
-            background-color: violet;
-            border: none;
-            padding: 10px;
-        }
-        #btn1:hover{
-            background-color: blueviolet;
-            color: white;
-            transform: scale(1.1);
-            transition: 0.2s;
-        }
+      #btn1 {
+        background-color: violet;
+        border: none;
+        padding: 10px;
+      }
+      #btn1:hover {
+        background-color: blueviolet;
+        color: white;
+        transform: scale(1.1);
+        transition: 0.2s;
+      }
 
-        a:link{
-            color: greenyellow;
-        }
-        a:active{
-            color: aqua;
-        }
-        a:visited{
-            color: cornflowerblue;
-        }
+      a:link {
+        color: greenyellow;
+      }
+      a:active {
+        color: aqua;
+      }
+      a:visited {
+        color: cornflowerblue;
+      }
 
+      ul > li:first-child {
+        background-color: yellow;
+      }
 
+      ul > li:last-child {
+        background-color: lightblue;
+      }
 
+      ul > li:nth-child(3) {
+        background-color: lightgreen;
+      }
 
+      main > div:first-of-type {
+        background-color: red;
+      }
+
+      main > div:last-of-type {
+        background-color: blue;
+      }
+      main > section:nth-of-type(3) {
+        background-color: aqua;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Learn Pseudo Class Selectors</h1>
 
     <!-- 
@@ -40,25 +59,38 @@
     2) :link
     3) :active
     4) :visited
-    5) :first-letter
-    6) :first-line
-    7) :before
-    8) :after
-    9) :selection
-    10) :marker
+    5) :first-child
+    6) :last-child
+    7) :nth-child()
+    8) :first-of-type
+    9) :last-of-type
+    10) :nth-of-type()
     -->
 
-    <button id="btn1">
-        Hover me
-    </button>
+    <button id="btn1">Hover me</button>
 
-    <a href="../html/newPage2.html">
-        New Link
-    </a>
-    <a href="./example.html">
-        new link 2
-    </a>
+    <a href="../html/newPage2.html"> New Link </a>
+    <a href="./example.html"> new link 2 </a>
 
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>REACT</li>
+      <li>TAILWIND</li>
+      <li>JS</li>
+    </ul>
 
-</body>
+    <main>
+      <section>section 1</section>
+      <aside>aside 1</aside>
+      <section>section 2</section>
+      <div>div 1</div>
+      <aside>aside 2</aside>
+      <section>section 3</section>
+      <div>div 2</div>
+      <div>div 3</div>
+      <section>section 4</section>
+    </main>
+    
+  </body>
 </html>

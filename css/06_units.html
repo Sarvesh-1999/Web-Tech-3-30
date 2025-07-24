@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #box1 {
+        height: 200px;
+        width: 200px;
+        background-color: yellow;
+        font-size: 30px;
+      }
+
+      #box2{
+        height: 40vh;
+        width: 50vw;
+        background-color: aqua;
+      }
+
+      #parent{
+        height: 400px;
+        width: 800px;
+        background-color: black;
+      }
+
+      #child{
+        height: 50%;
+        width: 50%;
+        background-color: red;
+      }
+
+      /* 
+      by default 1em = 16px
+      em values are depends upon current element
+      font size
+      */
+      #box3{
+        height: 1em;
+        width: 1em;
+        font-size: 100px;
+        background-color: blueviolet;
+      }
+
+      /* 
+      by default 1rem = 16px
+      rem values are depend upon root element's
+      font size
+      */
+      html{
+        font-size: 50px;
+      }
+
+      #box4{
+        height: 1rem;
+        width: 1rem;
+        font-size: 100px;
+        background-color: chartreuse;
+      }
+
+
+     
+
+
+    </style>
+  </head>
+  <body>
+    <h1>CSS Units</h1>
+
+    <div id="box1">I am BOX 1</div>
+
+    <div id="box2"></div>
+
+
+    <div id="parent">
+        <div id="child"></div>
+    </div>
+
+
+
+   <div id="box3"></div>
+
+   <div id="box4"></div>
+
+
+  </body>
+</html>
