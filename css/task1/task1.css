@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navbar {
+  height: 70px;
+  width: 100%;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: black;
+  color: white;
+}
+
+#navbar > .logo {
+  height: 90%;
+  width: 50px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+}
+
+#navbar > .menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+#navbar > .profile {
+  height: 90%;
+  width: 50px;
+  border: 2px solid black;
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navbar > .profile > div {
+  background-color: white;
+  border-radius: 50%;
+  padding: 2px;
+}
