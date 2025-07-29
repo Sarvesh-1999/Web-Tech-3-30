@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      main {
+        height: 80vh;
+        width: 80vw;
+        background-color: yellow;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center; /*x-axis*/
+        align-items: center; /*y-axis*/
+      }
+      article {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        border: 5px solid black;
+      }
+      .item1 {
+        justify-self: start;
+        align-self: start;
+      }
+
+      .item3 {
+        justify-self: end;
+        align-self: start;
+      }
+
+      .item7 {
+        justify-self: start;
+        align-self: end;
+      }
+
+      .item9 {
+        justify-self: end;
+        align-self: end;
+      }
+
+      .item2 {
+        align-self: end;
+      }
+      .item4 {
+        justify-self: end;
+      }
+      .item6 {
+        justify-self: start;
+      }
+      .item8 {
+        align-self: start;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learn Grid CSS</h1>
+
+    <main>
+      <article class="item1"></article>
+      <article class="item2"></article>
+      <article class="item3"></article>
+      <article class="item4"></article>
+      <article class="item5"></article>
+      <article class="item6"></article>
+      <article class="item7"></article>
+      <article class="item8"></article>
+      <article class="item9"></article>
+    </main>
+  </body>
+</html>

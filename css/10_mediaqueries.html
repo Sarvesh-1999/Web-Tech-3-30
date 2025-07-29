@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+        background-color: lightblue;
+      }
+
+      /* MOBILE MEDIUM */
+      @media (min-width: 375px) {
+        h1 {
+          background-color: red;
+          color: white;
+        }
+      }
+      /* MOBILE LARGE */
+      @media (min-width: 425px) {
+        h1 {
+          background-color: blueviolet;
+        }
+      }
+
+      /* TABLET */
+      @media (min-width: 768px) {
+        h1 {
+          background-color: aqua;
+          color: black;
+        }
+      }
+
+      /* LAPTOP */
+      @media (min-width: 1024px) {
+        h1 {
+          background-color: brown;
+          color: white;
+        }
+      }
+
+      /* LAPTOP LARGE */
+      @media (min-width: 1440px) {
+        h1 {
+          background-color: yellow;
+          color: black;
+        }
+      }
+
+      main {
+        height: 80vh;
+        width: 80vw;
+        border: 5px solid black;
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+      }
+      main > article {
+        height: 80%;
+        width: 45%;
+        border: 2px solid red;
+      }
+
+      @media (max-width: 320px) {
+        main {
+          flex-direction: column;
+        }
+        main > article {
+          width: 90%;
+        }
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <h1>Media Queries</h1>
+
+    <main>
+      <article></article>
+      <article></article>
+    </main>
+  </body>
+</html>
