@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar {
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+.menu-tabs {
+  /* border: 3px solid red; */
+  display: flex;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  text-transform: uppercase;
+}
+.menu-tabs > li {
+  /* border: 2px solid red; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.menu-tabs > li > span {
+  padding: 5px 10px;
+  /* border: 2px solid white; */
+  border-radius: 5px;
+}
+.menu-tabs > li:hover > span {
+  background-color: rgba(220, 220, 220, 0.338);
+  color: crimson;
+}
+.game-info-tab {
+  position: relative;
+}
+.dropdown {
+  position: absolute;
+  border-top: 2px solid crimson;
+  top: 70px;
+  left: 0;
+  background-color: #292929;
+  padding: 10px;
+  list-style: none;
+  border-radius: 2px;
+  width: 130px;
+  display: none;
+}
+.dropdown > li {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 8px;
+  cursor: pointer;
+}
+.dropdown > li:hover {
+  background-color: rgba(220, 220, 220, 0.338);
+}
+
+.menu-tabs > li:hover > .dropdown {
+  display: block;
+}
+.support-tab {
+  position: relative;
+}
+.socials-tab {
+  position: relative;
+}
+@media (max-width:426px) {
+    .hide-tab{
+        display: none !important;
+    }
+}
