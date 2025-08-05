@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box1{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            position: absolute;
+            animation-name: boxmove;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+        }
+
+        @keyframes boxmove {
+            from{
+                top: 0;
+                left: 0;
+                background-color: red;
+                box-shadow: 0 0 5px black;
+            }
+
+            to{
+                top: 0;
+                left: calc(100% - 200px);
+                background-color: orange;
+                border-radius: 100%;
+                box-shadow: 0 20px 10px black;
+
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1">
+
+
+    </div>
+</body>
+</html>
